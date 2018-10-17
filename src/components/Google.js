@@ -13,12 +13,12 @@ export default class Google extends Component {
   }
   responseGoogle = (response) => {
     console.log(response);
-    // this.setState({
-    //   isLoggedIn: true,
-    //   name: response.profileObj.name,
-    //   email: response.profileObj.email,
-    //   imageUrl: response.profileObj.imageUrl
-    // });
+    this.setState({
+      isLoggedIn: true,
+      name: response.profileObj.name,
+      email: response.profileObj.email,
+      imageUrl: response.profileObj.imageUrl
+    });
   
   }
   responseGoogleFailure = (error) => {
@@ -28,18 +28,18 @@ export default class Google extends Component {
   render() {
     let gmContent;
     if (this.state.isLoggedIn) {
-      // gmContent = (
-      //   <div style={{
-      //     width: '400px',
-      //     margin: 'auto',
-      //     background: '#f4f4f4',
-      //     padding: '20px',
-      //   }}>
-      //     <img src={this.state.imageUrl} alt={this.state.name} />
-      //     <h2>Welcome {this.state.name}</h2>
-      //     Email: {this.state.email}
-      //   </div>
-      // )
+      gmContent = (
+        <div style={{
+          width: '400px',
+          margin: 'auto',
+          background: '#f4f4f4',
+          padding: '20px',
+        }}>
+          <img src={this.state.imageUrl} alt={this.state.name} />
+          <h2>Welcome {this.state.name}</h2>
+          Email: {this.state.email}
+        </div>
+      )
     }
     else {
       gmContent = (<GoogleLogin
