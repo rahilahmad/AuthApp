@@ -26,7 +26,7 @@ export default class Google extends Component {
     }
     return (
       <div>
-        
+        {gmContent}
       </div>
     )
   }
