@@ -12,7 +12,7 @@ export default class Google extends Component {
     }
   }
     responseGoogle = (response) => {
-    console.log(JSON.stringify(response));
+    console.log(response);
     this.setState({
       isLoggedIn: true,
       name: response.profileObj.name,
