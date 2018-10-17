@@ -37,14 +37,13 @@ export default class Facebook extends Component {
                    <img src = {this.state.picture} alt ={this.state.name} />
                    <h2>Welcome {this.state.name}</h2>
                    Email: {this.state.email}
-
                 </div>
             )
         }
         else {
             fbContent = (
                 <FacebookLogin
-                    appId="287286302111301"
+                    appId="310633369729517"
                     autoLoad={true}
                     fields="name,email,picture"
                     onClick={this.componentClicked}
