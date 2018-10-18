@@ -1,4 +1,3 @@
-
 import { combineReducers } from 'redux';
 
 const initialState = {
@@ -7,14 +6,14 @@ const initialState = {
     email: '',
     picture: '',
 }
-const fbReducer = (state = initialState, action) => {
+const gmReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'IS_LOGGED_IN':
             return {
                 ...state,
                 isLoggedInName: action.payload,
             }
-        case 'RESPONSE_FACEBOOK':
+        case 'RESPONSE_GMAIL':
             return {
                 ...state,
                 name: action.name,
@@ -25,7 +24,7 @@ const fbReducer = (state = initialState, action) => {
     }
     return state;
 }
-const reducer = combineReducers({
-    fbReducer,
+const gmailReducer = combineReducers({
+    gmReducer,
 })
-export { reducer }
+export { gmailReducer }
