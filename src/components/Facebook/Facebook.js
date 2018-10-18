@@ -32,7 +32,7 @@ import { isloggedIn } from './action';
         // };
         render() {
             let fbContent;
-            if (this.state.isloggedIn) {
+            if (this.props.fbReducer.isloggedIn) {
                 console.log(this.props.fbReducer.name)
 
                 fbContent = (
