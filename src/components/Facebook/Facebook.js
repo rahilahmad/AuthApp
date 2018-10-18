@@ -70,7 +70,7 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
     return {
-        fbReducer = state.fbReducer
+        fbReducer :state.fbReducer
     }
 }
 export default connect(mapStateToProps)(mapDispatchToProps)(Facebook);
