@@ -72,4 +72,4 @@ const mapStateToProps = (state) => {
         fbReducer :state.fbReducer
     }
 }
-export default connect(mapStateToProps)(mapDispatchToProps)(Facebook);
+export default connect(mapStateToProps,mapDispatchToProps)(Facebook);
