@@ -64,7 +64,7 @@ import { isloggedIn } from './action';
         }
     }
 const mapDispatchToProps = (dispatch) => {
-    bindActionCreators({ isloggedIn }, dispatch)
+    bindActionCreators({isloggedIn:{ isloggedIn }, dispatch})
 }
 
 const mapStateToProps = (state) => {
