@@ -4,29 +4,20 @@ import { connect } from 'react-redux';
 import { repsonseFacebook } from './action';
 
 class Facebook extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            isLoggedIn: false,
-            userID: '',
-            name: '',
-            email: '',
-            picture: ''
-        }
-    }
+    // constructor(props) {
+    //     super(props)
+    //     this.state = {
+    //         isLoggedIn: false,
+    //         userID: '',
+    //         name: '',
+    //         email: '',
+    //         picture: ''
+    //     }
+    // }
     componentClicked = () => {
         console.log("Clicked");
     };
-    // responseFacebook = () => {
-    //     //  console.log(response);
-    //     this.setState({
-    //         // isLoggedIn: true,
-    //         // name: response.name,
-    //         // userID: response.userID,
-    //         // email: response.email,
-    //         // picture: response.picture.data.url
-    //     });
-    // };
+
     render() {
         let fbContent;
         console.log(this.props.fbReducer.name)
