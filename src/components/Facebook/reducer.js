@@ -5,17 +5,19 @@ const initialState={
     name:'',
     userID:'',
     email: '',
-    picture:''
+    picture:'',
+    isLoggedIn:true
 }
 const fbReducer = (state = initialState, action) => {
 switch (action.type){
     case 'IS_LOGGED_IN':
     return{
-        isLoggedIn: action.payload
+        isLoggedIn: action.payload,    
     }
+    
     case 'RESPONSE_FACEBOOK':
         return{
-            ...initialState,
+            ...state,
             name: action.name,
             userID: action.userID,
             email: action.email,
