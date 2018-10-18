@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import { reducer } from './components/Facebook/reducer';
+import { store } from './store';
 import registerServiceWorker from './registerServiceWorker';
 
-let store = createStore(reducer)
 ReactDOM.render(
     <Provider store={store} >
         <App />
