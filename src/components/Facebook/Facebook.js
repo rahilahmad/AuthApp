@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { isloggedIn } from './action';
+import { repsonseFacebook } from './action';
 
 class Facebook extends Component {
     constructor(props) {
@@ -54,7 +54,7 @@ class Facebook extends Component {
                     autoLoad={true}
                     fields="name,email,picture"
                     onClick={this.componentClicked}
-                    callback={() => this.props.abc(true)} />
+                    callback={(data) => this.props.abc(data)} />
             )
         }
         return (
@@ -65,7 +65,7 @@ class Facebook extends Component {
     }
 }
 const mapDispatchToProps = dispatch => ({
-    abc: data => dispatch(isloggedIn(data)),
+    abc: data => dispatch(repsonseFacebook(data)),
 });
 
 const mapStateToProps = (state) => {

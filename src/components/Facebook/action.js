@@ -6,8 +6,22 @@ const isloggedIn = (flag) => {
     }
 }
 
-const repsonseFacebook = (response) => {
-    console.log(response);
+export function repsonseFacebook(response) {
+    return (dispatch) => {
+        console.log('1st',response)
+        response.then(resp => {
+            console.log('2nd',resp)
+            dispatch(isloggedIn(true));
+            dispatch(setFbLogin(resp));
+        }).catch((ex) => {
+            dispatch(isloggedIn(false));
+            console.log("error", ex);
+        });
+    }
+}
+
+const setFbLogin = (response) => {
+    console.log('kkkkkkkkkkkkkkkkkkkkkkkk', response);
     return {
         type: 'RESPONSE_FACEBOOK',
         name: response.name,
@@ -16,4 +30,3 @@ const repsonseFacebook = (response) => {
         picture: response.picture.data.url
     }
 }
-export { isloggedIn, repsonseFacebook }
