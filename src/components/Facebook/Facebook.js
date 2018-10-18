@@ -53,7 +53,7 @@ import { isloggedIn } from './action';
                         autoLoad={true}
                         fields="name,email,picture"
                         onClick={this.componentClicked}
-                        callback={()=>this.props.isloggedIn(true)} />
+                        callback={this.props.isloggedIn(this.state.isLoggedIn)} />
                 )
             }
             return (
