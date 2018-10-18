@@ -67,4 +67,4 @@ const mapStateToProps = (state) => {
       gmReducer: state.gmReducer
   }
 }
-export default connect(mapStateToProps, () => mapDispatchToProps)(Facebook);
+export default connect(mapStateToProps, () => mapDispatchToProps)(Google);
