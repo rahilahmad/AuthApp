@@ -30,8 +30,9 @@ import { isloggedIn } from './action';
         // };
         render() {
             let fbContent;
+            console.log(this.props.fbReducer.name)
             if (this.props.fbReducer.isloggedIn) {
-                console.log(this.props.fbReducer.name)
+                
 
                 fbContent = (
                     <div style={{
