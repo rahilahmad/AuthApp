@@ -6,7 +6,6 @@ const initialState={
     userID:'',
     email: '',
     picture:'',
-    isLoggedIn:false
 }
 const fbReducer = (state = initialState, action) => {
 switch (action.type){

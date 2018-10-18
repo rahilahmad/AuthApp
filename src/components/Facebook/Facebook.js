@@ -21,8 +21,6 @@ import { isloggedIn } from './action';
         // responseFacebook = () => {
         //     //  console.log(response);
         //     this.setState({
-        //         isLoggedIn: this.props.loginInReducer,
-        //         name: this.props.fbResponse.name,
         //         // isLoggedIn: true,
         //         // name: response.name,
         //         // userID: response.userID,
