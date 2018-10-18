@@ -7,7 +7,7 @@ const initialState={
     email: '',
     picture:''
 }
-const fbReducer = (state = initialState, action) => {
+const fbReducer = (state = {}, action) => {
 switch (action.type){
     case 'IS_LOGGED_IN':
     return{
