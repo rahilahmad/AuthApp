@@ -8,14 +8,12 @@ const isloggedIn = (flag) => {
 
 export function repsonseFacebook(response) {
     return (dispatch) => {
-        console.log('1st', response)
         dispatch(isloggedIn(true));
         dispatch(setFbLogin(response));
     }
 }
 
 const setFbLogin = (response) => {
-    console.log('kkkkkkkkkkkkkkkkkkkkkkkk', response);
     return {
         type: 'RESPONSE_FACEBOOK',
         name: response.name,

@@ -4,25 +4,12 @@ import { connect } from 'react-redux';
 import { repsonseFacebook } from './action';
 
 class Facebook extends Component {
-    // constructor(props) {
-    //     super(props)
-    //     this.state = {
-    //         isLoggedIn: false,
-    //         userID: '',
-    //         name: '',
-    //         email: '',
-    //         picture: ''
-    //     }
-    // }
+
     componentClicked = () => {
         console.log("Clicked");
     };
-
     render() {
         let fbContent;
-        console.log(this.props.fbReducer.name)
-        console.log(this.props.fbReducer.isLoggedInName)
-        console.log(this.props.fbReducer.picture)
         if (this.props.fbReducer.isLoggedInName) {
             fbContent = (
                 <div style={{
@@ -44,7 +31,7 @@ class Facebook extends Component {
                     autoLoad={true}
                     fields="name,email,picture"
                     onClick={this.componentClicked}
-                    callback={(dd) => this.props.abc(dd)} />
+                    callback={(data) => this.props.respFacebook(data)} />
             )
         }
         return (
@@ -55,11 +42,10 @@ class Facebook extends Component {
     }
 }
 const mapDispatchToProps = dispatch => ({
-    abc: ss => dispatch(repsonseFacebook(ss)),
+    respFacebook: data1 => dispatch(repsonseFacebook(data1)),
 });
 
 const mapStateToProps = (state) => {
-    console.log("fbReducer", state)
     return {
         fbReducer: state.fbReducer
     }
