@@ -53,7 +53,7 @@ import { isloggedIn } from './action';
                         autoLoad={true}
                         fields="name,email,picture"
                         onClick={this.componentClicked}
-                        callback={this.props.isloggedIn(true)} />
+                        callback={()=>this.props.isloggedIn(true)} />
                 )
             }
             return (
@@ -64,7 +64,7 @@ import { isloggedIn } from './action';
         }
     }
 const mapDispatchToProps = (dispatch) => {
-    bindActionCreators({isloggedIn:{ isloggedIn }, dispatch})
+    bindActionCreators({ isloggedIn }, dispatch)
 }
 
 const mapStateToProps = (state) => {
