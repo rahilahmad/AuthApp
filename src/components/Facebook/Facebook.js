@@ -30,8 +30,9 @@ class Facebook extends Component {
     render() {
         let fbContent;
         console.log(this.props.fbReducer.name)
-        console.log(this.props.fbReducer.isloggedInName)
-        if (this.props.fbReducer.isloggedInName) {
+        console.log(this.props.fbReducer.isLoggedInName)
+        console.log(this.props.fbReducer.picture)
+        if (this.props.fbReducer.isLoggedInName) {
             fbContent = (
                 <div style={{
                     width: '400px',
