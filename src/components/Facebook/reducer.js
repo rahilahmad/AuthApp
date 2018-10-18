@@ -8,6 +8,7 @@ const initialState={
     picture:'',
 }
 const fbReducer = (state = initialState, action) => {
+    console.log("reducer")
 switch (action.type){
     case 'IS_LOGGED_IN':
     return{

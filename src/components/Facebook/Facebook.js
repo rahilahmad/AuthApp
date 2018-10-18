@@ -69,6 +69,7 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const mapStateToProps = (state) => {
+    console.log("fbReduccer")
     return {
         fbReducer :state.fbReducer
     }

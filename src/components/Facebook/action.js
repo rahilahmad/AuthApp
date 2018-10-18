@@ -1,4 +1,5 @@
 const isloggedIn = (flag) => {
+    console.log("action console")
     return {
         type: 'IS_LOGGED_IN',
         payload: flag,
