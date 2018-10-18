@@ -17,6 +17,7 @@ switch (action.type){
     }
     
     case 'RESPONSE_FACEBOOK':
+    console.log(state)
         return{
             ...state,
             name: action.name,

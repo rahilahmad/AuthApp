@@ -7,6 +7,7 @@ const isloggedIn = (flag) => {
 }
 
 const repsonseFacebook = (response) => {
+    console.log(response);
     return {
         type: 'RESPONSE_FACEBOOK',
         name: response.name,
