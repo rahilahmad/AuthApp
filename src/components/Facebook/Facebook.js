@@ -32,7 +32,7 @@ import { isloggedIn } from './action';
         // };
         render() {
             let fbContent;
-            if (this.props.fbReducer.isloggedIn) {
+            if (this.state.isloggedIn) {
                 console.log(this.props.fbReducer.name)
 
                 fbContent = (
@@ -55,7 +55,7 @@ import { isloggedIn } from './action';
                         autoLoad={true}
                         fields="name,email,picture"
                         onClick={this.componentClicked}
-                        callback={()=>this.props.isloggedIn.payload(true)} />
+                        callback={()=>this.props.isloggedIn(true)} />
                 )
             }
             return (
