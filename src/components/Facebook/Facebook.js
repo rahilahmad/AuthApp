@@ -69,7 +69,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = (state) => {
-    console.log("fbReduccer")
+    console.log("fbReduccer", state)
     return {
         fbReducer: state.fbReducer
     }
