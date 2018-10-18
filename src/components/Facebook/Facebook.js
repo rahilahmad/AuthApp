@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { isloggedIn } from './action';
 
-
  class Facebook extends Component {
         constructor(props) {
             super(props)
