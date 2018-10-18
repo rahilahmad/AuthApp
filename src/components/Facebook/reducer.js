@@ -1,13 +1,13 @@
 
 import { combineReducers } from 'redux';
 
-// const initialState={
-//     name:'',
-//     userID:'',
-//     email: '',
-//     picture:''
-// }
-const fbReducer = (state = {}, action) => {
+const initialState={
+    name:'',
+    userID:'',
+    email: '',
+    picture:''
+}
+const fbReducer = (state = initialState, action) => {
 switch (action.type){
     case 'IS_LOGGED_IN':
     return{
@@ -15,6 +15,7 @@ switch (action.type){
     }
     case 'RESPONSE_FACEBOOK':
         return{
+            ...initialState,
             name: action.name,
             userID: action.userID,
             email: action.email,
