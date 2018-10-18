@@ -12,14 +12,14 @@ export default class Google extends Component {
     }
   }
   responseGoogle = (response) => {
-   // console.log(response);
+    // console.log(response);
     this.setState({
       isLoggedIn: true,
       name: response.profileObj.name,
       email: response.profileObj.email,
       imageUrl: response.profileObj.imageUrl
     });
-  
+
   }
   responseGoogleFailure = (error) => {
     console.log(error);
