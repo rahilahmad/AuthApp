@@ -3,6 +3,7 @@ const initialState = {
     name: '',
     email: '',
     picture: '',
+    isLoggedInName = false,
 }
 export const gmReducer = (state = initialState, action) => {
     switch (action.type) {
