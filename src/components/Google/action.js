@@ -1,6 +1,6 @@
 const isloggedInGmail = (flag) => {
     return {
-        type: 'IS_LOGGED_IN_GOOGLE',
+        type: 'IS_LOGGED_IN',
         payload: flag,
     }
 }
@@ -14,7 +14,7 @@ const setGmLogin = (response) => {
 }
 export function responseGmail(response){
     return (dispatch) => {
-        dispatch(isloggedInGmail(true));
+        dispatch(isloggedIn(true));
         dispatch(setGmLogin(response))
     }
 }

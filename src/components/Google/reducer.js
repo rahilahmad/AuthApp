@@ -3,14 +3,14 @@ const initialState = {
     name: '',
     email: '',
     picture: '',
-    isLoggedInNameGoogle: false
+    isLoggedInName: false
 }
 export const gmReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'IS_LOGGED_IN_GOOGLE':
+        case 'IS_LOGGED_IN':
             return {
                 ...state,
-                isLoggedInNameGoogle: action.payload,
+                isLoggedInName: action.payload,
             }
         case 'RESPONSE_GMAIL':
             return {
