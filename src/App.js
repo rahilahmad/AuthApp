@@ -8,39 +8,37 @@ class App extends Component {
 
   render() {
    // console.log('testing',this.props.fbStore.isLoggedInNameFacebook);
-    console.log('testingGmail',this.props.gmStore.isLoggedInName);
+    // console.log('testingGmail',this.props.gmStore.isLoggedInName);
 
-    // let mainContent;
-    // if (this.props.fbReducer.isLoggedInName === false || this.props.gmReducer.isLoggedInName === false) {
-    //   mainContent = (
-    //     <div>
-    //       <p><Facebook /></p>
-    //       <p><Google /></p>
-    //     </div>
-    //   )
-    // }
-    // console.log('rhrhrhrhr', this.props.reducers.name)
-    // if (this.props.reducers.isLoggedInName === true) {
-    //   mainContent = (
-    //     <div>
-    //       <p><Facebook /></p>
-    //     </div>
-    //   ) 
-    // }
-    // else {
-    //   <p><Google /></p>
-    // }
+    let mainContent;
+    if (this.props.fbReducer.isLoggedInNameFacebook === false || this.props.gmReducer.isLoggedInName === false) {
+      mainContent = (
+        <div>
+          <p><Facebook /></p>
+          <p><Google /></p>
+        </div>
+      )
+    }
+    if (this.props.fbReducer.isLoggedInName === true) {
+      mainContent = (
+        <div>
+          <p><Facebook /></p>
+        </div>
+      ) 
+    }
+    else {
+      <p><Google /></p>
+    }
     return (
       <div>
-       <Facebook />
-       <Google />
+        {mainContent}
       </div>
     );
   }
 }
 const mapStateToProps = (state) => {
   return {
-   // fbStore: state.fbReducer,
+   fbStore: state.fbReducer,
    gmStore: state.gmReducer,
 
   }
