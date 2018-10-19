@@ -11,7 +11,7 @@ class App extends Component {
     // console.log('testingGmail',this.props.gmStore.isLoggedInName);
 
     let mainContent;
-    if (this.props.fbReducer.isLoggedInNameFacebook === false || this.props.gmReducer.isLoggedInName === false) {
+    if (this.props.fbStore.isLoggedInNameFacebook === false || this.props.gmStore.isLoggedInName === false) {
       mainContent = (
         <div>
           <p><Facebook /></p>
@@ -19,7 +19,7 @@ class App extends Component {
         </div>
       )
     }
-    if (this.props.fbReducer.isLoggedInName === true) {
+    if (this.props.fbStore.isLoggedInName === true) {
       mainContent = (
         <div>
           <p><Facebook /></p>
