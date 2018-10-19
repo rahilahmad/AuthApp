@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import LinkedIn from 'react-linkedin-login';
 import styles from './styles.css'
 
-export default class Linkedin extends Component {
+class Linkedin extends Component {
     callback = (response) => {
         console.log(response);
     }
@@ -15,4 +15,4 @@ export default class Linkedin extends Component {
          />
     }
 }
-
+export default Linkedin

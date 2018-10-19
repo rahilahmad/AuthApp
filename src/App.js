@@ -3,7 +3,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import Facebook from './components/Facebook/Facebook';
 import Google from './components/Google/Google';
-import LinkedIn from './components/LinkedIn/LinkedIn';
+import Linkedin from './components/LinkedIn/LinkedIn';
 
 class App extends Component {
 
@@ -32,7 +32,7 @@ class App extends Component {
     }
     return (
       <div>
-        <LinkedIn />
+        <Linkedin />
         {mainContent}
       </div>
     );
