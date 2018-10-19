@@ -1,7 +1,7 @@
 const isloggedIn = (flag) => {
     console.log("action console", flag)
     return {
-        type: 'IS_LOGGED_IN',
+        type: 'IS_LOGGED_IN_TWITTER',
         payload: flag,
     }
 }

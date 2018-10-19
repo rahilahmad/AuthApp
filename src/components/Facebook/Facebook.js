@@ -11,7 +11,7 @@ class Facebook extends Component {
     render() {
 
         let fbContent;
-        if (this.props.reducers.isLoggedInName) {
+        if (this.props.reducers.isLoggedInNameFacebook) {
             fbContent = (
                 <div style={{
                     width: '400px',

@@ -1,14 +1,14 @@
-const isloggedIn = (flag) => {
+const isloggedInFacebook = (flag) => {
     console.log("action console", flag)
     return {
-        type: 'IS_LOGGED_IN',
+        type: 'IS_LOGGED_IN_FACEBOOK',
         payload: flag,
     }
 }
 
 export function repsonseFacebook(response) {
     return (dispatch) => {
-        dispatch(isloggedIn(true));
+        dispatch(isloggedInFacebook(true));
         dispatch(setFbLogin(response));
     }
 }
