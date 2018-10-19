@@ -7,8 +7,8 @@ import Google from './components/Google/Google';
 class App extends Component {
 
   render() {
-    console.log('testing',this.props.fbStore.isLoggedInNameFacebook);
-    console.log('testing',this.props.gmStore.isLoggedInNameGoogle);
+   // console.log('testing',this.props.fbStore.isLoggedInNameFacebook);
+    console.log('testingGmail',this.props.gmStore.isLoggedInNameGoogle);
 
     // let mainContent;
     // if (this.props.fbReducer.isLoggedInName === false || this.props.gmReducer.isLoggedInName === false) {
