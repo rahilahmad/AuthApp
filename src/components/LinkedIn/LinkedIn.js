@@ -25,7 +25,7 @@ class  Linkedin extends Component {
             linkContent = (
                 <LinkedinSDK
                 clientId="81zxb2usmtp256"
-                callBack={(data) => this.props.respFacebook(data)}
+                callBack={(data) => this.props.respLinkedin(data)}
                 fields=":(first-name,id,picture-url)"
                 className={'className'}
                 loginButtonText={'Login with Linkedin'}
