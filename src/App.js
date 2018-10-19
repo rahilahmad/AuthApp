@@ -6,7 +6,7 @@ import Google from './components/Google/Google';
 import Linkedin from './components/LinkedIn/LinkedIn';
 
 class App extends Component {
-
+  
   render() {
     let mainContent;
     if (this.props.fbStore.isLoggedInNameFacebook === false && this.props.gmStore.isLoggedInName === false) {
