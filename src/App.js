@@ -7,7 +7,9 @@ import Google from './components/Google/Google';
 class App extends Component {
 
   render() {
-    console.log('testing',this.props.reducers.isLoggedInName);
+    console.log('testing',this.props.fbReducer.isLoggedInNameFacebook);
+    console.log('testing',this.props.gmReducer.isLoggedInNameGoogle);
+
     // let mainContent;
     // if (this.props.fbReducer.isLoggedInName === false || this.props.gmReducer.isLoggedInName === false) {
     //   mainContent = (
@@ -38,7 +40,8 @@ class App extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    reducers: state.fbReducer
+    fbReducer: state.fbReducer,
+    gmReducer: state.gmReducer,
 
   }
  
