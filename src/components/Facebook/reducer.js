@@ -4,14 +4,14 @@ const initialState = {
     userID: '',
     email: '',
     picture: '',
-    isLoggedInName: false
+    isLoggedInNameFacebook: false
 }
 export const fbReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'IS_LOGGED_IN_FACEBOOK':
             return {
                 ...state,
-                isLoggedInName: action.payload,
+                isLoggedInNameFacebook: action.payload,
             }
         case 'RESPONSE_FACEBOOK':
             return {
