@@ -3,7 +3,7 @@ import GoogleLogin from 'react-google-login';
 import {connect} from 'redux';
 import {responseGmail} from './action';
 
-export default class Google extends Component {
+ class Google extends Component {
   // constructor(props) {
   //   super(props)
   //   this.state = {
