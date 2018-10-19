@@ -12,7 +12,7 @@ class Facebook extends Component {
 
         let fbContent;
         console.log(this.props.reducers)
-        if (this.props.reducers.fbReducer.isloggedInName) {
+        if (this.props.reducers.isloggedInName) {
             fbContent = (
                 <div style={{
                     width: '400px',
@@ -20,9 +20,9 @@ class Facebook extends Component {
                     background: '#f4f4f4',
                     padding: '20px',
                 }}>
-                    <img src={this.props.reducers.fbReducer.picture} alt={this.props.reducers.fbReducer.name} />
-                    <h2>Welcome {this.props.reducers.fbReducer.name}</h2>
-                    Email: {this.props.reducers.fbReducer.email}
+                    <img src={this.props.reducers.picture} alt={this.props.reducers.name} />
+                    <h2>Welcome {this.props.reducers.name}</h2>
+                    Email: {this.props.reducers.email}
                 </div>
             )
         }

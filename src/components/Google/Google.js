@@ -29,7 +29,7 @@ class Google extends Component {
 
   render() {
     let gmContent;
-    if (this.props.reducers.gmReducer.isLoggedInName) {
+    if (this.props.reducers.isLoggedInName) {
       gmContent = (
         <div style={{
           width: '400px',
@@ -37,9 +37,9 @@ class Google extends Component {
           background: '#f4f4f4',
           padding: '20px',
         }}>
-          <img src={this.props.reducers.gmReducer.picture} alt={this.props.reducers.gmReducer.name} />
-          <h2>Welcome {this.props.reducers.gmReducer.name}</h2>
-          Email: {this.props.reducers.gmReducer.email}
+          <img src={this.props.reducers.picture} alt={this.props.reducers.name} />
+          <h2>Welcome {this.props.reducers.name}</h2>
+          Email: {this.props.reducers.email}
         </div>
       )
     }
@@ -64,7 +64,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = (state) => {
   return {
-    reducers: state.reducers
+    reducers: state.gmReducer
     
   }
 }
