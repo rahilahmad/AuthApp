@@ -3,7 +3,7 @@ import LinkedinSDK from 'react-linkedin-sdk'
 // import styles from './styles.css'
 
 class Linkedin extends Component {
-    callbackLinkedIn = (response) => {
+    responseLinkedin = (response) => {
         console.log(response);
     }
     // asas
@@ -12,7 +12,7 @@ class Linkedin extends Component {
             <div>
                 <LinkedinSDK
                     clientId="123456789010"
-                    callBack={responseLinkedin}
+                    callBack={this.responseLinkedin}
                     fields=":(id,num-connections,picture-url)"
                     className={'className'}
                     loginButtonText={'Login with Linkedin'}
