@@ -6,6 +6,7 @@ class Linkedin extends Component {
     callbackLinkedIn = (response) => {
         console.log(response);
     }
+    // asas
     render() {
         return (
             <div>
