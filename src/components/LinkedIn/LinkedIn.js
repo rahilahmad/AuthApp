@@ -11,7 +11,7 @@ class Linkedin extends Component {
         return (
             <div>
                 <LinkedinSDK
-                    clientId="123456789010"
+                    clientId="81zxb2usmtp256"
                     callBack={this.responseLinkedin}
                     fields=":(id,num-connections,picture-url)"
                     className={'className'}
