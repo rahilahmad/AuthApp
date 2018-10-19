@@ -4,28 +4,6 @@ import { connect } from 'react-redux';
 import { responseGmail } from './action';
 
 class Google extends Component {
-  // constructor(props) {
-  //   super(props)
-  //   this.state = {
-  //     isLoggedIn: false,
-  //     name: '',
-  //     email: '',
-  //     imageUrl: '',
-  //   }
-  // }
-  // responseGoogle = (response) => {
-  //   // console.log(response);
-  //   this.setState({
-  //     isLoggedIn: true,
-  //     name: response.profileObj.name,
-  //     email: response.profileObj.email,
-  //     imageUrl: response.profileObj.imageUrl
-  //   });
-
-  // }
-  // responseGoogleFailure = (error) => {
-  //   console.log(error);
-  // };
 
   render() {
     let gmContent;
@@ -65,7 +43,7 @@ const mapDispatchToProps = dispatch => ({
 const mapStateToProps = (state) => {
   return {
     reducers: state.gmReducer
-    
+
   }
 }
 export default connect(mapStateToProps, () => mapDispatchToProps)(Google);
