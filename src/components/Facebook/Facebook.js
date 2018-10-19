@@ -11,7 +11,7 @@ class Facebook extends Component {
     render() {
 
         let fbContent;
-        console.log(this.props.reducers.fbReducer.name)
+        console.log(state.reducers)
         if (this.props.reducers.fbReducer.isloggedInName) {
             fbContent = (
                 <div style={{

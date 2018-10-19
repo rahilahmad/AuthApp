@@ -65,6 +65,7 @@ const mapDispatchToProps = dispatch => ({
 const mapStateToProps = (state) => {
   return {
     reducers: state.reducers
+    
   }
 }
 export default connect(mapStateToProps, () => mapDispatchToProps)(Google);
