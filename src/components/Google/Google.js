@@ -37,9 +37,9 @@ import {responseGmail} from './action';
           background: '#f4f4f4',
           padding: '20px',
         }}>
-          <img src={this.props.reducers.picture} alt={this.props.reducers.name} />
-          <h2>Welcome {this.props.reducers.name}</h2>
-          Email: {this.props.reducers.email}
+          <img src={this.props.reducers.gmReducer.picture} alt={this.props.reducers.gmReducer.name} />
+          <h2>Welcome {this.props.reducers.gmReducer.name}</h2>
+          Email: {this.props.reducers.gmReducer.email}
         </div>
       )
     }
@@ -64,7 +64,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = (state) => {
   return {
-      reducers: state.reducers
+      reducers: state.reducers.gmReducer
   }
 }
 export default connect(mapStateToProps, () => mapDispatchToProps)(Google);
