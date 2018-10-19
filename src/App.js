@@ -39,6 +39,7 @@ const mapStateToProps = (state) => {
     reducers: state.fbReducer
 
   }
+ 
 }
 
 export default connect(mapStateToProps)(App);
