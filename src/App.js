@@ -8,7 +8,7 @@ class App extends Component {
 
   render() {
     let mainContent;
-    if (this.props.fbStore.isLoggedInNameFacebook === false && this.props.gmStore.isLoggedInNameGoogle === false) {
+    if (this.props.fbStore.isLoggedInNameFacebook === false && this.props.gmStore.isLoggedInName === false) {
       mainContent = (
         <div>
           <p><Facebook /></p>

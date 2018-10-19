@@ -1,6 +1,6 @@
 const isloggedInGmail = (flag) => {
     return {
-        type: 'IS_LOGGED_IN_GMAIL',
+        type: 'IS_LOGGED_IN',
         payload: flag,
     }
 }
