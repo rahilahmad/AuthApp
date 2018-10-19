@@ -7,7 +7,7 @@ class Google extends Component {
 
   render() {
     let gmContent;
-    if (this.props.gmStore.isLoggedInNameGoogle=== true) {
+    if (this.props.gmStore.isLoggedInName=== true) {
       gmContent = (
         <div style={{
           width: '400px',
