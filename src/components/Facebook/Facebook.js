@@ -12,7 +12,7 @@ class Facebook extends Component {
 
         let fbContent;
         console.log(this.props.reducers)
-        if (this.props.reducers.isloggedInName) {
+        if (this.props.reducers.isLoggedInName) {
             fbContent = (
                 <div style={{
                     width: '400px',
