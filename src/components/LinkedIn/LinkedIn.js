@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import LinkedIn from 'react-linkedin-login';
-import styles from './styles.css'
+// import styles from './styles.css'
 
 class Linkedin extends Component {
     callbackLinkedIn = (response) => {
@@ -11,7 +11,7 @@ class Linkedin extends Component {
         <LinkedIn 
         clientId='81zxb2usmtp256'
         callback={this.callbackLinkedIn}
-        className={styles.linkedin}
+        //className={styles.linkedin}
         text='LinkedIn'
          />
          )
