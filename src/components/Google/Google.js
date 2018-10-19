@@ -29,7 +29,7 @@ import {responseGmail} from './action';
 
   render() {
     let gmContent;
-    if (this.props.gmReducer.isloggedInName) {
+    if (this.props.reducers.isloggedInName) {
       gmContent = (
         <div style={{
           width: '400px',
@@ -37,9 +37,9 @@ import {responseGmail} from './action';
           background: '#f4f4f4',
           padding: '20px',
         }}>
-          <img src={this.props.gmReducer.picture} alt={this.props.gmReducer.name} />
-          <h2>Welcome {this.props.gmReducer.name}</h2>
-          Email: {this.props.gmReducer.email}
+          <img src={this.props.reducers.picture} alt={this.props.reducers.name} />
+          <h2>Welcome {this.props.reducers.name}</h2>
+          Email: {this.props.reducers.email}
         </div>
       )
     }
@@ -64,7 +64,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = (state) => {
   return {
-      gmReducer: state.gmReducer
+      reducers: state.reducers
   }
 }
 export default connect(mapStateToProps, () => mapDispatchToProps)(Google);

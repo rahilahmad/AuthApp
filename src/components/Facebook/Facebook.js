@@ -10,7 +10,7 @@ class Facebook extends Component {
     };
     render() {
         let fbContent;
-        if (this.props.fbReducer.isLoggedInName) {
+        if (this.props.reducers.isLoggedInName) {
             fbContent = (
                 <div style={{
                     width: '400px',
@@ -18,9 +18,9 @@ class Facebook extends Component {
                     background: '#f4f4f4',
                     padding: '20px',
                 }}>
-                    <img src={this.props.fbReducer.picture} alt={this.props.fbReducer.name} />
-                    <h2>Welcome {this.props.fbReducer.name}</h2>
-                    Email: {this.props.fbReducer.email}
+                    <img src={this.props.reducers.picture} alt={this.reducers.fbReducer.name} />
+                    <h2>Welcome {this.props.reducers.name}</h2>
+                    Email: {this.props.reducers.email}
                 </div>
             )
         }
@@ -47,7 +47,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = (state) => {
     return {
-        fbReducer: state.fbReducer
+        reducers: state.reducers
     }
 }
 export default connect(mapStateToProps, () => mapDispatchToProps)(Facebook);
