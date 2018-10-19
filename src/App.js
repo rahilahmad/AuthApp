@@ -19,7 +19,7 @@ class App extends Component {
         </div>
       )
     }
-    if (this.props.fbStore.isLoggedInName === true) {
+    if (this.props.fbStore.isLoggedInNameFacebook === true ) {
       mainContent = (
         <div>
           <p><Facebook /></p>
