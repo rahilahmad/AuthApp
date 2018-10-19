@@ -4,6 +4,7 @@ const initialState = {
     userID: '',
     email: '',
     picture: '',
+    isLoggedInName: false
 }
 export const fbReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -23,6 +24,3 @@ export const fbReducer = (state = initialState, action) => {
     }
     return state;
 }
-// const reducer = combineReducers({
-//     fbReducer,
-// })

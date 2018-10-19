@@ -4,6 +4,7 @@ const initialState = {
     userID: '',
     email: '',
     picture: '',
+    isLoggedInName: false
 }
 export const gmReducer = (state = initialState, action) => {
     switch (action.type) {
@@ -23,7 +24,3 @@ export const gmReducer = (state = initialState, action) => {
     }
     return state;
 }
-// const gmailReducer = combineReducers({
-//     gmReducer,
-// })
-// export { gmailReducer }
