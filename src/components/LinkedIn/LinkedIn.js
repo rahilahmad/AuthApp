@@ -18,7 +18,7 @@ class Linkedin extends Component {
                     loginButtonText={'Login with Linkedin'}
                     //logoutButtonText={'Logout from Linkedin'}
                     buttonType={'button'}
-                    icon={<Icon />}
+                    // icon={<Icon />}
                     getOAuthToken
                 />,
           </div>
