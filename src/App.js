@@ -16,7 +16,7 @@ class App extends Component {
     //     </div>
     //   )
     // }
-    console.log('rhrhrhrhr', this.props.fbReducer.isLoggedInName)
+    console.log('rhrhrhrhr', this.props.gmReducer.isLoggedInName)
     if (this.props.fbReducer.isLoggedInName === true) {
       mainContent = (
         <div>
