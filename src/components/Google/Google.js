@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import GoogleLogin from 'react-google-login';
-import {connect} from 'react-redux';
-import {responseGmail} from './action';
+import { connect } from 'react-redux';
+import { responseGmail } from './action';
 
- class Google extends Component {
+class Google extends Component {
   // constructor(props) {
   //   super(props)
   //   this.state = {
@@ -37,9 +37,9 @@ import {responseGmail} from './action';
           background: '#f4f4f4',
           padding: '20px',
         }}>
-          <img src={this.props.reducers.gmReducer.picture} alt={this.props.reducers.gmReducer.name} />
-          <h2>Welcome {this.props.reducers.gmReducer.name}</h2>
-          Email: {this.props.reducers.gmReducer.email}
+          <img src={this.props.reducers.picture} alt={this.props.reducers.name} />
+          <h2>Welcome {this.props.reducers.name}</h2>
+          Email: {this.props.reducers.email}
         </div>
       )
     }
@@ -48,7 +48,7 @@ import {responseGmail} from './action';
         clientId="408793953786-gb5hoipegnh5tqco7jn04u08a6ml2d5h.apps.googleusercontent.com"
         buttonText="Login with Google"
         onSuccess={(data) => this.props.respGmail(data)}
-    //    onFailure={this.responseGoogleFailure}
+      //    onFailure={this.responseGoogleFailure}
       />)
     }
     return (
@@ -64,7 +64,7 @@ const mapDispatchToProps = dispatch => ({
 
 const mapStateToProps = (state) => {
   return {
-      reducers: state.reducers.gmReducer
+    reducers: state.reducers.gmReducer
   }
 }
 export default connect(mapStateToProps, () => mapDispatchToProps)(Google);
