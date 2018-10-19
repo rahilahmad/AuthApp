@@ -7,7 +7,6 @@ const middleware = [thunk];
 
 export const store = createStore(
   reducers,
-
   compose(
     applyMiddleware(...middleware),
     window.devToolsExtension ? window.devToolsExtension() : f => f
