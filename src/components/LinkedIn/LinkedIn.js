@@ -6,14 +6,13 @@ class Linkedin extends Component {
     responseLinkedin = (response) => {
         console.log(response);
     }
-    render() {
-        console.log('ssdsdsdfsfed')
+    render() {  
         return (
             <div>
                 <LinkedinSDK
                     clientId="81zxb2usmtp256"
                     callBack={this.responseLinkedin}
-                    fields=":(first-name,id,num-connections,picture-url)"
+                    fields=":(first-name,id,picture-url)"
                     className={'className'}
                     loginButtonText={'Login with Linkedin'}
                     // logoutButtonText={'Logout from Linkedin'}
