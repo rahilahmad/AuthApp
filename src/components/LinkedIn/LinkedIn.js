@@ -3,7 +3,7 @@ import LinkedIn from 'react-linkedin-login';
 import styles from './styles.css'
 
 class Linkedin extends Component {
-    callback = (response) => {
+    callbackLinkedIn = (response) => {
         console.log(response);
     }
     render(){
