@@ -19,8 +19,8 @@ class Facebook extends Component {
                     padding: '20px',
                 }}>
                     <img src={this.props.reducers.fbReducer.picture} alt={this.props.reducers.fbReducer.name} />
-                    <h2>Welcome {this.props.fbReducer.reducers.name}</h2>
-                    Email: {this.props.fbReducer.reducers.email}
+                    <h2>Welcome {this.props.reducers.fbReducer.name}</h2>
+                    Email: {this.props.reducers.fbReducer.email}
                 </div>
             )
         }
