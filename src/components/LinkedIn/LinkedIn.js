@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
-import LinkedIn from 'react-linkedin-login';
+import LinkedinSDK from 'react-linkedin-sdk'
 // import styles from './styles.css'
 
 class Linkedin extends Component {
     callbackLinkedIn = (response) => {
         console.log(response);
     }
-    render(){
-        // klklklklklklklklkl   
-        return(
-        <LinkedIn 
-        clientId='81zxb2usmtp256'
-        callback={this.callbackLinkedIn}
-        //className={styles.linkedin}
-        text='LinkedIn'
-         />
-         )
+    render() {
+        return (
+            <div>
+                <LinkedinSDK
+                    clientId="123456789010"
+                    callBack={responseLinkedin}
+                    fields=":(id,num-connections,picture-url)"
+                    className={'className'}
+                    loginButtonText={'Login with Linkedin'}
+                    //logoutButtonText={'Logout from Linkedin'}
+                    buttonType={'button'}
+                    icon={<Icon />}
+                    getOAuthToken
+                />,
+          </div>
+
+        )
     }
 }
 export default Linkedin
