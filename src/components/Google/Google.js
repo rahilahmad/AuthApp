@@ -29,7 +29,7 @@ class Google extends Component {
 
   render() {
     let gmContent;
-    if (this.props.reducers.isloggedInName) {
+    if (this.props.reducers.isLoggedInName) {
       gmContent = (
         <div style={{
           width: '400px',
