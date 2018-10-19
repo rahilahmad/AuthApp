@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import GoogleLogin from 'react-google-login';
-import {connect} from 'redux';
+import {connect} from 'react-redux';
 import {responseGmail} from './action';
 
  class Google extends Component {
