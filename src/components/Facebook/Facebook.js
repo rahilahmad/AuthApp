@@ -30,7 +30,7 @@ class Facebook extends Component {
             fbContent = (
                 <FacebookLogin
                     appId="310633369729517"
-                    autoLoad={true}
+                    autoLoad={false}
                     fields="name,email,picture"
                     onClick={this.componentClicked}
                     callback={(data) => this.props.respFacebook(data)} />
