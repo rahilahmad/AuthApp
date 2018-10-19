@@ -27,7 +27,10 @@ class App extends Component {
       ) 
     }
     else {
-      <p><Google /></p>
+      mainContent = (
+        <p><Google /></p>
+      )
+      
     }
     return (
       <div>
