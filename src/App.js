@@ -17,7 +17,7 @@ class App extends Component {
     //   )
     // }
     console.log('rhrhrhrhr', this.props.reducers.isLoggedInName)
-    if (this.props.fbReducer.isLoggedInName === true) {
+    if (this.props.reducers.isLoggedInName === false) {
       mainContent = (
         <div>
           <p><Facebook /></p>
