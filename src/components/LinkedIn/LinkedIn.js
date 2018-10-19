@@ -7,6 +7,7 @@ class Linkedin extends Component {
         console.log(response);
     }
     render() {
+        console.log('ssdsdsdfsfed');
         return (
             <div>
                 <LinkedinSDK
