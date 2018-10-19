@@ -6,7 +6,6 @@ class Linkedin extends Component {
     responseLinkedin = (response) => {
         console.log(response);
     }
-    // asas
     render() {
         return (
             <div>
@@ -19,7 +18,6 @@ class Linkedin extends Component {
                     //logoutButtonText={'Logout from Linkedin'}
                     buttonType={'button'}
                     // icon={<Icon />}
-                    getOAuthToken
                 />,
           </div>
 
