@@ -16,13 +16,13 @@ class App extends Component {
     //     </div>
     //   )
     // }
-    console.log('rhrhrhrhr', this.props.reducers.isLoggedInName)
-    if (this.props.reducers.isLoggedInName === false) {
+    console.log('rhrhrhrhr', this.props.reducers.name)
+    if (this.props.reducers.isLoggedInName === true) {
       mainContent = (
         <div>
           <p><Facebook /></p>
         </div>
-      )
+      ) 
     }
     else {
       <p><Google /></p>
@@ -36,7 +36,7 @@ class App extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    reducers: state.gmReducer
+    reducers: state.fbReducer
 
   }
 }
