@@ -7,12 +7,14 @@ class Linkedin extends Component {
         console.log(response);
     }
     render(){
+        return(
         <LinkedIn 
         clientId='81zxb2usmtp256'
         callback={this.callbackLinkedIn}
         className={styles.linkedin}
         text='LinkedIn'
          />
+         )
     }
 }
 export default Linkedin
