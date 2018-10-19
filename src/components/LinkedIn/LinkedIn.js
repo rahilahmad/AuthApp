@@ -8,7 +8,7 @@ class  Linkedin extends Component {
 
         let linkContent;
         if (this.props.linkStore.isLoggedInNameLinkedin) {
-            fbContent = (
+            linkContent = (
                 <div style={{
                     width: '400px',
                     margin: 'auto',
