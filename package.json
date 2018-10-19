@@ -7,6 +7,7 @@
     "react-dom": "^16.5.2",
     "react-facebook-login": "^4.1.1",
     "react-google-login": "^3.2.1",
+    "react-linkedin-login": "^1.0.4",
     "react-redux": "^5.0.7",
     "react-scripts": "1.1.5",
     "redux": "^4.0.1",
