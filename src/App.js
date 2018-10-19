@@ -8,15 +8,16 @@ class App extends Component {
 
   render() {
     let mainContent;
-    if (this.props.fbReducer.isLoggedInName === false || this.props.gmReducer.isLoggedInName === false) {
-      mainContent = (
-        <div>
-          <p><Facebook /></p>
-          <p><Google /></p>
-        </div>
-      )
-    }
-    else if (this.props.fbReducer.isLoggedInName === true) {
+    // if (this.props.fbReducer.isLoggedInName === false || this.props.gmReducer.isLoggedInName === false) {
+    //   mainContent = (
+    //     <div>
+    //       <p><Facebook /></p>
+    //       <p><Google /></p>
+    //     </div>
+    //   )
+    // }
+    console.log('rhrhrhrhr', this.props.fbReducer.isLoggedInName)
+    if (this.props.fbReducer.isLoggedInName === true) {
       mainContent = (
         <div>
           <p><Facebook /></p>
@@ -24,7 +25,7 @@ class App extends Component {
       )
     }
     else {
-      <p> <Google /></p>
+      <p><Google /></p>
     }
     return (
       <div>
