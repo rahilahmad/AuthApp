@@ -6,7 +6,7 @@ import { gmailReducer } from './components/Google/reducer';
 const middleware = [thunk];
 
 export const store = createStore(
-  reducer,
+  // reducer,
   gmailReducer,
   compose(
     applyMiddleware(...middleware),
