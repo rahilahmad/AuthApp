@@ -32,13 +32,15 @@ class App extends Component {
     );
   }
 }
-const getStateToProps = (state) => {
-  fbReducer = state.fbReducer;
-  gmReducer = state.gmReducer;
+const mapStateToProps = (state) => {
+  return {
+    gmReducer: state.gmReducer,
+    fbReducer: state.fbReducer
+  }
 }
 
 
-export default connect(getStateToProps)(App);
+export default connect(mapStateToProps)(App);
 
 
 
