@@ -8,7 +8,7 @@ class App extends Component {
 
   render() {
    // console.log('testing',this.props.fbStore.isLoggedInNameFacebook);
-    console.log('testingGmail',this.props.gmStore.name);
+    console.log('testingGmail',this.props.gmStore.isLoggedInName);
 
     // let mainContent;
     // if (this.props.fbReducer.isLoggedInName === false || this.props.gmReducer.isLoggedInName === false) {
