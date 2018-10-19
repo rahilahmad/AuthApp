@@ -12,7 +12,7 @@ class Linkedin extends Component {
                 <LinkedinSDK
                     clientId="81zxb2usmtp256"
                     callBack={this.responseLinkedin}
-                    fields=":(name,id,num-connections,picture-url)"
+                    fields=":(id,num-connections,picture-url)"
                     className={'className'}
                     loginButtonText={'Login with Linkedin'}
                     //logoutButtonText={'Logout from Linkedin'}
