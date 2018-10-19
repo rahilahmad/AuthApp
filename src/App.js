@@ -19,7 +19,7 @@ class App extends Component {
         </div>
       )
     }
-    if (this.props.fbStore.isLoggedInNameFacebook === true ) {
+    else if (this.props.fbStore.isLoggedInNameFacebook === true ) {
       mainContent = (
         <div>
           <p><Facebook /></p>
@@ -43,9 +43,7 @@ const mapStateToProps = (state) => {
   return {
    fbStore: state.fbReducer,
    gmStore: state.gmReducer,
-
-  }
- 
+  } 
 }
 
 export default connect(mapStateToProps)(App);
