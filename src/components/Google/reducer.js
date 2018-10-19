@@ -1,7 +1,6 @@
 
 const initialState = {
     name: '',
-    userID: '',
     email: '',
     picture: '',
     isLoggedInNameGoogle: false
