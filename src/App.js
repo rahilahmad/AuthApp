@@ -36,8 +36,8 @@ class App extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    gmReducer: state.gmReducer,
-    fbReducer: state.fbReducer
+    reducers: state.gmReducer
+
   }
 }
 
