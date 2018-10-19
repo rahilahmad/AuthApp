@@ -5,9 +5,10 @@ import Facebook from './components/Facebook/Facebook';
 import Google from './components/Google/Google';
 
 class App extends Component {
+
   render() {
     let mainContent;
-    if (this.props.fbReducer.isLoggedInName === false && this.props.gmReducer.isLoggedInName === false) {
+    if (this.props.fbReducer.isLoggedInName === false || this.props.gmReducer.isLoggedInName === false) {
       mainContent = (
         <div>
           <p><Facebook /></p>
@@ -38,7 +39,6 @@ const mapStateToProps = (state) => {
     fbReducer: state.fbReducer
   }
 }
-
 
 export default connect(mapStateToProps)(App);
 
