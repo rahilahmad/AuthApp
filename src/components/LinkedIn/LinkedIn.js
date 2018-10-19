@@ -7,6 +7,7 @@ class Linkedin extends Component {
         console.log(response);
     }
     render(){
+        // klklklklklklklklkl   
         return(
         <LinkedIn 
         clientId='81zxb2usmtp256'
