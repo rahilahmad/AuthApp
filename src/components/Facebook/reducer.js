@@ -1,13 +1,11 @@
 
-import { combineReducers } from 'redux';
-
 const initialState = {
     name: '',
     userID: '',
     email: '',
     picture: '',
 }
-const fbReducer = (state = initialState, action) => {
+export const fbReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'IS_LOGGED_IN':
             return {
@@ -25,7 +23,6 @@ const fbReducer = (state = initialState, action) => {
     }
     return state;
 }
-const reducer = combineReducers({
-    fbReducer,
-})
-export { reducer }
+// const reducer = combineReducers({
+//     fbReducer,
+// })

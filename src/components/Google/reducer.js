@@ -1,4 +1,3 @@
-import { combineReducers } from 'redux';
 
 const initialState = {
     name: '',
@@ -6,7 +5,7 @@ const initialState = {
     email: '',
     picture: '',
 }
-const gmReducer = (state = initialState, action) => {
+export const gmReducer = (state = initialState, action) => {
     switch (action.type) {
         case 'IS_LOGGED_IN':
             return {
@@ -24,7 +23,7 @@ const gmReducer = (state = initialState, action) => {
     }
     return state;
 }
-const gmailReducer = combineReducers({
-    gmReducer,
-})
-export { gmailReducer }
+// const gmailReducer = combineReducers({
+//     gmReducer,
+// })
+// export { gmailReducer }
