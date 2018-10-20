@@ -3,7 +3,7 @@ import LinkedinSDK from 'react-linkedin-sdk';
 import { connect } from 'react-redux';
 import { repsonseLinkedin } from './action';
 
-class  Linkedin extends Component {
+class Linkedin extends Component {
     render() {
 
         let linkContent;
@@ -24,13 +24,13 @@ class  Linkedin extends Component {
         else {
             linkContent = (
                 <LinkedinSDK
-                clientId="81zxb2usmtp256"
-                callBack={(data) => this.props.respLinkedin(data)}
-                fields=":(first-name,id,picture-url)"
-                className={'className'}
-                loginButtonText={'Login with Linkedin'}
-                buttonType={'button'}
-            />
+                    clientId="81zxb2usmtp256"
+                    callBack={(data) => this.props.respLinkedin(data)}
+                    fields=":(first-name,id,picture-url)"
+                    className={'className'}
+                    // loginButtonText={'Login with Linkedin'}
+                    buttonType={'button'}
+                />
             )
         }
         return (
@@ -41,7 +41,7 @@ class  Linkedin extends Component {
     }
 }
 const mapDispatchToProps = dispatch => ({
-   respLinkedin: data1 => dispatch(repsonseLinkedin(data1)),
+    respLinkedin: data1 => dispatch(repsonseLinkedin(data1)),
 });
 
 const mapStateToProps = (state) => {

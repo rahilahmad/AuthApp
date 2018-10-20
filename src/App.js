@@ -6,7 +6,7 @@ import Google from './components/Google/Google';
 import Linkedin from './components/LinkedIn/LinkedIn';
 
 class App extends Component {
-  
+
   render() {
     let mainContent;
     if (this.props.fbStore.isLoggedInNameFacebook === false && this.props.gmStore.isLoggedInName === false) {
@@ -17,22 +17,25 @@ class App extends Component {
         </div>
       )
     }
-    else if (this.props.fbStore.isLoggedInNameFacebook === true ) {
+    else if (this.props.fbStore.isLoggedInNameFacebook === true) {
       mainContent = (
         <div>
           <p><Facebook /></p>
         </div>
-      ) 
+      )
     }
-    else {
+    else if(this.props.gmStore.isLoggedInName === true){
       mainContent = (
         <p><Google /></p>
       )
-      
+    }
+    else {
+      mainContent = (
+        <p><Linkedin /></p>
+      )
     }
     return (
       <div>
-        <Linkedin />
         {mainContent}
       </div>
     );
@@ -40,9 +43,10 @@ class App extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-   fbStore: state.fbReducer,
-   gmStore: state.gmReducer,
-  } 
+    fbStore: state.fbReducer,
+    gmStore: state.gmReducer,
+    linkStore: state.linkReducer
+  }
 }
 
 export default connect(mapStateToProps)(App);
