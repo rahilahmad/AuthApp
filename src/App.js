@@ -12,17 +12,17 @@ class App extends Component {
     if (this.props.fbStore.isLoggedInNameFacebook === false && this.props.gmStore.isLoggedInName === false && this.props.linkStore.isLoggedInNameLinkedin === false) {
       mainContent = (
         <div>
-          <p><Facebook /></p>
+         
           <p><Google /></p>
           <p><Linkedin /></p>
+          <p><Facebook /></p>
         </div>
       )
     }
-    else if (this.props.fbStore.isLoggedInNameFacebook === true) {
+    else if (this.props.linkStore.isLoggedInNameLinkedin === true) {
       mainContent = (
-        <div>
-          <p><Facebook /></p>
-        </div>
+           <p><Linkedin /></p>
+        
       )
     }
     else if(this.props.gmStore.isLoggedInName === true){
@@ -32,7 +32,7 @@ class App extends Component {
     }
     else {
       mainContent = (
-        <p><Linkedin /></p>
+        <p><Facebook /></p>
       )
     }
     return (
