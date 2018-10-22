@@ -7,7 +7,13 @@ class Facebook extends Component {
 
     render() {
         let fbContent;
-        if (this.props.fbStore.isLoggedInNameFacebook === true && !this.props.fbStore.name == " ") {
+        if(this.props.fbStore.isLoggedInNameFacebook === true && !this.props.fbStore.name == " "){
+            fbContent=(
+                alert( 'Enter email and password' )
+            )
+
+        }
+        else if (this.props.fbStore.isLoggedInNameFacebook === true) {
             fbContent = (
                 <div style={{
                     width: '400px',

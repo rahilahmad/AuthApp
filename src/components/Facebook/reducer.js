@@ -13,11 +13,11 @@ export const fbReducer = (state = initialState, action) => {
                 ...state,
                 isLoggedInNameFacebook: action.payload,
             }
-        case 'IS_LOGGED_IN_FACEBOOK_FALSE':
-            return {
-                ...state,
-                isLoggedInNameFacebook: action.payload,
-            }
+        // case 'IS_LOGGED_IN_FACEBOOK_FALSE':
+        //     return {
+        //         ...state,
+        //         isLoggedInNameFacebook: action.payload,
+        //     }
 
         case 'RESPONSE_FACEBOOK':
             return {

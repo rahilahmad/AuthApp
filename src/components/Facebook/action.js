@@ -25,13 +25,13 @@ const setFbLogin = (response) => {
 export function repsonseFacebook(response) {
 
     return (dispatch) => {
-        if (response.name === " ") {
-            dispatch(isloggedInFacebookFalse(false));
-        }
-        else {
+        // if (response.name === " ") {
+        //     dispatch(isloggedInFacebookFalse(false));
+        // }
+        // else {
             dispatch(isloggedInFacebook(true));
             dispatch(setFbLogin(response));
-        }
+        // }
     }
 
 }
