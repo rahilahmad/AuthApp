@@ -21,7 +21,7 @@ class Facebook extends Component {
                 </div>
             )
         }
-        else if(this.props.isLoggedInNameFacebook === false) {
+        else  {
             fbContent = (
                 <FacebookLogin
                     appId="310633369729517"
