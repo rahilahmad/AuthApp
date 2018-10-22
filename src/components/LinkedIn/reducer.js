@@ -18,7 +18,7 @@ export const linkReducer = (state = initialState, action) => {
                 ...state,
                 name: action.name,
                 userID: action.userID,
-                email: action.email-address,
+                email: action.email,
                 picture: action.picture
             }
     }
