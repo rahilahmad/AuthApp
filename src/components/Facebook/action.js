@@ -16,7 +16,7 @@ const setFbLogin = (response) => {
    }
 
 export function repsonseFacebook(response) {
-    if(repsonse.name === ''){
+    if(response.name === ''){
         return (dispatch)=>{
             dispatch(isloggedInFacebook(false));
         }
