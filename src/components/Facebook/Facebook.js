@@ -5,9 +5,9 @@ import { repsonseFacebook } from './action';
 
 class Facebook extends Component {
 
-    componentClicked = () => {
-        console.log("Clicked");
-    };
+    // componentClicked = () => {
+    //     console.log("Clicked");
+    // };
     render() {
 
         let fbContent;
@@ -31,7 +31,7 @@ class Facebook extends Component {
                     appId="310633369729517"
                     autoLoad={false}
                     fields="name,email,picture"
-                    onClick={this.componentClicked}
+                    // onClick={this.componentClicked}
                     callback={(data) => this.props.respFacebook(data)} />
             )
         }
