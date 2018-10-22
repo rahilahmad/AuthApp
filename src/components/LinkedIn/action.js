@@ -18,7 +18,7 @@ const setlinkLogin = (response) => {
         type: 'RESPONSE_LINKEDIN',
         name: response.firstName,
         userID: response.id,
-        email: response.email,
+        email: response.r_emailaddress,
         picture: response.pictureUrl
     }
 }
