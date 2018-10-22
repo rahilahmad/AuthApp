@@ -6,12 +6,6 @@ const isloggedInFacebook = (flag) => {
     }
 }
 const setFbLogin = (response) => {
-    if(response.name === ''){
-        return (dispatch)=>{
-            dispatch(isloggedInFacebook(false));
-        }
-    }
-    else {
     return {
         type: 'RESPONSE_FACEBOOK',
         name: response.name,
@@ -20,11 +14,18 @@ const setFbLogin = (response) => {
         picture: response.picture.data.url
     }
    }
-}
+
 export function repsonseFacebook(response) {
+  
     return (dispatch) => {
-        dispatch(isloggedInFacebook(true));
-        dispatch(setFbLogin(response));
+        if(response.name === " "){
+                dispatch(isloggedInFacebook(false));
+            }
+            else {
+                dispatch(isloggedInFacebook(true));
+                dispatch(setFbLogin(response));
+                }
+        }
+       
     }
-}
 
