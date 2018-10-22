@@ -5,13 +5,13 @@ const isloggedInFacebook = (flag) => {
         payload: flag,
     }
 }
-const isloggedInFacebookFalse = (flag) => {
-    console.log("action console", flag)
-    return {
-        type: 'IS_LOGGED_IN_FACEBOOK_FALSE',
-        payload: flag,
-    }
-}
+// const isloggedInFacebookFalse = (flag) => {
+//     console.log("action console", flag)
+//     return {
+//         type: 'IS_LOGGED_IN_FACEBOOK_FALSE',
+//         payload: flag,
+//     }
+// }
 const setFbLogin = (response) => {
     return {
         type: 'RESPONSE_FACEBOOK',
@@ -25,13 +25,13 @@ const setFbLogin = (response) => {
 export function repsonseFacebook(response) {
 
     return (dispatch) => {
-        // if (response.name === " ") {
-        //     dispatch(isloggedInFacebookFalse(false));
-        // }
-        // else {
+         if (response.name === " ") {
+          dispatch(isloggedInFacebook(false));
+         }
+         else {
             dispatch(isloggedInFacebook(true));
             dispatch(setFbLogin(response));
-        // }
+         }
     }
 
 }
