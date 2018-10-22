@@ -7,7 +7,7 @@ class Facebook extends Component {
 
     render() {
         let fbContent;
-        if (this.props.fbStore.isLoggedInNameFacebook===true) {
+        if (this.props.fbStore.isLoggedInNameFacebook === true) {
             fbContent = (
                 <div style={{
                     width: '400px',
@@ -25,7 +25,7 @@ class Facebook extends Component {
             fbContent = (
                 <FacebookLogin
                     appId="310633369729517"
-                    // autoLoad={false}
+                    autoLoad={false}
                     fields="name,email,picture"
                     callback={(data) => this.props.respFacebook(data)} />
             )

@@ -26,9 +26,8 @@ class Linkedin extends Component {
                 <LinkedinSDK
                     clientId="81zxb2usmtp256"
                     callBack={(data) => this.props.respLinkedin(data)}
-                    fields=":(first-name,id,picture-url)"
+                    fields=":(first-name,id,picture-url,email-address)"
                     className={'className'}
-                    // loginButtonText={'Login with Linkedin'}
                     buttonType={'button'}
                 />
             )

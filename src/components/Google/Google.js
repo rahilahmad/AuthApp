@@ -26,7 +26,6 @@ class Google extends Component {
         clientId="408793953786-gb5hoipegnh5tqco7jn04u08a6ml2d5h.apps.googleusercontent.com"
         buttonText="Login with Google"
         onSuccess={(data) => this.props.respGmail(data)}
-      //    onFailure={this.responseGoogleFailure}
       />)
     }
     return (
