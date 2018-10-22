@@ -5,11 +5,7 @@ import { repsonseFacebook } from './action';
 
 class Facebook extends Component {
 
-    // componentClicked = () => {
-    //     console.log("Clicked");
-    // };
     render() {
-
         let fbContent;
         if (this.props.fbStore.isLoggedInNameFacebook) {
             fbContent = (
@@ -31,7 +27,6 @@ class Facebook extends Component {
                     appId="310633369729517"
                     autoLoad={false}
                     fields="name,email,picture"
-                    // onClick={this.componentClicked}
                     callback={(data) => this.props.respFacebook(data)} />
             )
         }

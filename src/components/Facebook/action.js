@@ -5,14 +5,6 @@ const isloggedInFacebook = (flag) => {
         payload: flag,
     }
 }
-
-export function repsonseFacebook(response) {
-    return (dispatch) => {
-        dispatch(isloggedInFacebook(true));
-        dispatch(setFbLogin(response));
-    }
-}
-
 const setFbLogin = (response) => {
     return {
         type: 'RESPONSE_FACEBOOK',
@@ -22,3 +14,11 @@ const setFbLogin = (response) => {
         picture: response.picture.data.url
     }
 }
+
+export function repsonseFacebook(response) {
+    return (dispatch) => {
+        dispatch(isloggedInFacebook(true));
+        dispatch(setFbLogin(response));
+    }
+}
+
