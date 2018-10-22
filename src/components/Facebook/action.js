@@ -5,6 +5,13 @@ const isloggedInFacebook = (flag) => {
         payload: flag,
     }
 }
+const isloggedInFacebookFalse = (flag) => {
+    console.log("action console", flag)
+    return {
+        type: 'IS_LOGGED_IN_FACEBOOK_FALSE',
+        payload: flag,
+    }
+}
 const setFbLogin = (response) => {
     return {
         type: 'RESPONSE_FACEBOOK',
@@ -13,19 +20,19 @@ const setFbLogin = (response) => {
         email: response.email,
         picture: response.picture.data.url
     }
-   }
+}
 
 export function repsonseFacebook(response) {
-  
+
     return (dispatch) => {
-        if(name === " "){
-                dispatch(isloggedInFacebook(false));
-            }
-            else {
-                dispatch(isloggedInFacebook(true));
-                dispatch(setFbLogin(response));
-                }
+        if (response.name === " ") {
+            dispatch(isloggedInFacebookFalse(false));
         }
-       
+        else {
+            dispatch(isloggedInFacebook(true));
+            dispatch(setFbLogin(response));
+        }
     }
+
+}
 
