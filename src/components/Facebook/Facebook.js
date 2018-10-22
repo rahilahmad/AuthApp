@@ -11,7 +11,6 @@ class Facebook extends Component {
             fbContent=(
                 alert( 'Enter email and password' )
             )
-
         }
         else if (this.props.fbStore.isLoggedInNameFacebook === true) {
             fbContent = (
