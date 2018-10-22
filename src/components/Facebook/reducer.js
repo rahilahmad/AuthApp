@@ -16,7 +16,7 @@ export const fbReducer = (state = initialState, action) => {
         case 'IS_LOGGED_IN_FACEBOOK_FALSE':
             return {
                 ...state,
-                isLoggedInNameFacebookFalse: action.payload,
+                isLoggedInNameFacebook: action.payload,
             }
 
         case 'RESPONSE_FACEBOOK':
