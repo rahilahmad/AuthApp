@@ -25,7 +25,7 @@ class Linkedin extends Component {
         }
         else {
             linkContent = (
-                <LinkedinSDK
+                <LinkedinSDK 
                     clientId= {clientIdLinkedin}
                     callBack={(data) => this.props.respLinkedin(data)}
                     fields=":(first-name,id,picture-url,email-address)"

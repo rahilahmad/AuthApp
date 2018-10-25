@@ -34,14 +34,7 @@ class App extends Component {
     else if (isLoggedInName === true) {
       mainContent = (
         <div>
-            <div style={{
-                    width: '400px',
-                    margin: 'auto',
-                    background: '#f4f4f4',
-                    padding: '20px',
-                }}>
           <p><Google /></p>
-          </div>
           <CalendarContainer />
         </div>
       )
@@ -56,9 +49,12 @@ class App extends Component {
     }
     return (
       <div>
-        <h1>Welcome to Calender</h1>
+          <h1 style={{marginLeft : 550}}>Welcome to Calender</h1>
+      <div style={{marginLeft : 550}}>
         {mainContent}
       </div>
+      </div>
+      
     );
   }
 }
