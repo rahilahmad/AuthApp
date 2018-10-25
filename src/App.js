@@ -3,6 +3,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import Facebook from './components/Facebook/Facebook';
 import Google from './components/Google/Google';
+import CalendarContainer from './components/calender/calender';
 import Linkedin from './components/LinkedIn/LinkedIn';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
           <p><Google /></p>
           <p><Linkedin /></p>
           <p><Facebook /></p>
+          <CalendarContainer />
         </div>
       )
     }
