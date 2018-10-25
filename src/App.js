@@ -32,11 +32,11 @@ class App extends Component {
         <p><Google /></p>
       )
     }
-    else {
-      mainContent = (
-        <p><Facebook /></p>
-      )
-    }
+    // else {
+    //   mainContent = (
+    //     <p><Facebook /></p>
+    //   )
+    // }
     return (
       <div>
         {mainContent}
