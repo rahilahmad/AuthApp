@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { getEvents } from './action';
 import Calendar from "react-big-calendar";
 import moment from "moment";
-import { getEvents } from './gcal';
+// import { getEvents } from './gcal';
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import request from 'superagent';
 const CALENDAR_ID = 'nu.edu.pk_rjvo0a8hogvtgcpavvol7u1sno@group.calendar.google.com'
