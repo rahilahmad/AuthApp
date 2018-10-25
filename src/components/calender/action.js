@@ -15,7 +15,6 @@ export function getEvents() {
                     title: event.summary,
                 })
             })
-            dispatch({ type: "GET_EVENTS", events });
             return { type: "GET_EVENTS", events }
         }
     })
