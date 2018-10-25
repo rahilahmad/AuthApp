@@ -8,11 +8,11 @@ import Linkedin from './components/LinkedIn/LinkedIn';
 class App extends Component {
 
   render() {
-    const {isLoggedInNameFacebook}= this.props.fbStore
-    const {isLoggedInName }=this.props.gmStore
-    const {isLoggedInNameLinkedin}=this.props.linkStore
+    const { isLoggedInNameFacebook } = this.props.fbStore
+    const { isLoggedInName } = this.props.gmStore
+    const { isLoggedInNameLinkedin } = this.props.linkStore
     let mainContent;
-    
+
     if (isLoggedInNameFacebook === false && isLoggedInName === false && isLoggedInNameLinkedin === false) {
       mainContent = (
         <div>
@@ -24,10 +24,10 @@ class App extends Component {
     }
     else if (isLoggedInNameLinkedin === true) {
       mainContent = (
-           <p><Linkedin /></p>  
+        <p><Linkedin /></p>
       )
     }
-    else if(isLoggedInName === true){
+    else if (isLoggedInName === true) {
       mainContent = (
         <p><Google /></p>
       )

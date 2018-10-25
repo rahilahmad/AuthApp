@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { connect } from 'react-redux';
 import { repsonseFacebook } from './action';
+import {appId} from './config'
 
 class Facebook extends Component {
 
@@ -25,7 +26,7 @@ class Facebook extends Component {
         else {
             fbContent = (
                 <FacebookLogin
-                    appId="310633369729517"
+                    appId= {appId}
                     autoLoad={false}
                     fields="name,email,picture"
                     callback={(data) => this.props.respFacebook(data)} />
