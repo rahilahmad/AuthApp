@@ -28,8 +28,8 @@ export function repsonseFacebook(response) {
         //     dispatch(isloggedInFacebook(false));
         // }
         // else {
-            dispatch(isloggedInFacebook(true));
-            dispatch(setFbLogin(response));
+        dispatch(isloggedInFacebook(true));
+        dispatch(setFbLogin(response));
         // }
     }
 

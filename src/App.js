@@ -42,13 +42,14 @@ class App extends Component {
     else {
       mainContent = (
         <div>
-          <p><Linkedin /></p>
+          <p style={marginLeft= 100}><Linkedin /></p>
           <CalendarContainer />
         </div>
       )
     }
     return (
       <div>
+        <h1>Welcome to Calender</h1>
         {mainContent}
 
       </div>
