@@ -17,6 +17,7 @@ class Linkedin extends Component {
                 }}>
                     <img src={picture} alt={name} />
                     <h2>Welcome {name}</h2>
+                    {/* Email: {email} */}
                     Email: {email}
                 </div>
             )
