@@ -1,5 +1,5 @@
 
-export const calenderReducer = (state={},action) => {
+const calenderReducer = (state={},action) => {
     switch (action.type) {
         case 'GET_EVENTS':
             return {
@@ -9,3 +9,5 @@ export const calenderReducer = (state={},action) => {
     }
     return state;
 }
+
+export default calenderReducer;
