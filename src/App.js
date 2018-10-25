@@ -22,9 +22,9 @@ class App extends Component {
         </div>
       )
     }
-    else if (isLoggedInNameLinkedin === true) {
+    else if (isLoggedInNameFacebook === true) {
       mainContent = (
-        <p><Linkedin /></p>
+        <p><Facebook/></p>
       )
     }
     else if (isLoggedInName === true) {
@@ -34,7 +34,7 @@ class App extends Component {
     }
     else {
       mainContent = (
-        <p><Facebook /></p>
+        <p><Linkedin /></p>
       )
     }
     return (
