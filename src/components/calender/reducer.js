@@ -5,6 +5,7 @@ const calenderReducer = (state={}, action) => {
                 ...state,
                 events: action.events,
             }
+        default:  
     }
     return state;
 }

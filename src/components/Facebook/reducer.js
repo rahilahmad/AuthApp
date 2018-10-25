@@ -26,6 +26,7 @@ export const fbReducer = (state = initialState, action) => {
                 email: action.email,
                 picture: action.picture
             }
+        default:  
     }
     return state;
 }
