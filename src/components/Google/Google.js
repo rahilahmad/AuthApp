@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import GoogleLogin from 'react-google-login';
 import { connect } from 'react-redux';
 import { responseGmail } from './action';
+import {clientIdGoogle} from '../../config';
 
 class Google extends Component {
 
@@ -24,7 +25,7 @@ class Google extends Component {
     }
     else {
       gmContent = (<GoogleLogin
-        clientId="408793953786-gb5hoipegnh5tqco7jn04u08a6ml2d5h.apps.googleusercontent.com"
+        clientId= {clientIdGoogle}
         buttonText="Login with Google"
         onSuccess={(data) => this.props.respGmail(data)}
       />)

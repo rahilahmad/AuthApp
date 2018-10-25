@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { connect } from 'react-redux';
 import { repsonseFacebook } from './action';
-import {appId} from './config'
+import {appId} from '../../config'
 
 class Facebook extends Component {
 

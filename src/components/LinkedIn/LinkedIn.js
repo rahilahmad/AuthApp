@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import LinkedinSDK from 'react-linkedin-sdk';
 import { connect } from 'react-redux';
 import { repsonseLinkedin } from './action';
+import {clientIdLinkedin} from '../../config'
 
 class Linkedin extends Component {
     render() {
@@ -25,7 +26,7 @@ class Linkedin extends Component {
         else {
             linkContent = (
                 <LinkedinSDK
-                    clientId="81zxb2usmtp256"
+                    clientId= {clientIdLinkedin}
                     callBack={(data) => this.props.respLinkedin(data)}
                     fields=":(first-name,id,picture-url,email-address)"
                     className={'className'}
