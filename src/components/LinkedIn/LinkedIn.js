@@ -5,9 +5,9 @@ import { repsonseLinkedin } from './action';
 
 class Linkedin extends Component {
     render() {
-
+            const {isLoggedInNameLinkedin,picture,name,email}=this.props.linkStore
         let linkContent;
-        if (this.props.linkStore.isLoggedInNameLinkedin) {
+        if (isLoggedInNameLinkedin) {
             linkContent = (
                 <div style={{
                     width: '400px',
@@ -15,9 +15,9 @@ class Linkedin extends Component {
                     background: '#f4f4f4',
                     padding: '20px',
                 }}>
-                    <img src={this.props.linkStore.picture} alt={this.props.linkStore.name} />
-                    <h2>Welcome {this.props.linkStore.name}</h2>
-                    Email: {this.props.linkStore.email}
+                    <img src={picture} alt={name} />
+                    <h2>Welcome {name}</h2>
+                    Email: {email}
                 </div>
             )
         }

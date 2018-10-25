@@ -6,8 +6,9 @@ import { responseGmail } from './action';
 class Google extends Component {
 
   render() {
+    const {isLoggedInName,picture,name,email}= this.props.gmStore
     let gmContent;
-    if (this.props.gmStore.isLoggedInName=== true) {
+    if (isLoggedInName=== true) {
       gmContent = (
         <div style={{
           width: '400px',
@@ -15,9 +16,9 @@ class Google extends Component {
           background: '#f4f4f4',
           padding: '20px',
         }}>
-          <img src={this.props.gmStore.picture} alt={this.props.gmStore.name} />
-          <h2>Welcome {this.props.gmStore.name}</h2>
-          Email: {this.props.gmStore.email}
+          <img src={picture} alt={name} />
+          <h2>Welcome {name}</h2>
+          Email: {email}
         </div>
       )
     }
