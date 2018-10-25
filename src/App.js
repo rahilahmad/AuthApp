@@ -20,13 +20,12 @@ class App extends Component {
           <p><Google /></p>
           <p><Linkedin /></p>
           <p><Facebook /></p>
-          <CalendarContainer />
         </div>
       )
     }
     else if (isLoggedInNameFacebook === true) {
       mainContent = (
-        <p><Facebook/></p>
+        <p><Facebook /></p>
       )
     }
     else if (isLoggedInName === true) {
@@ -42,6 +41,7 @@ class App extends Component {
     return (
       <div>
         {mainContent}
+        <CalendarContainer />
       </div>
     );
   }
