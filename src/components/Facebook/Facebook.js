@@ -6,8 +6,9 @@ import { repsonseFacebook } from './action';
 class Facebook extends Component {
 
     render() {
+        const { isLoggedInNameFacebook, name, picture, email } = this.props.fbStore
         let fbContent;
-        if (this.props.fbStore.isLoggedInNameFacebook === true && this.props.fbStore.name == " ") {
+        if (isLoggedInNameFacebook === true && name == " ") {
             fbContent = (
                 <div style={{
                     width: '400px',
@@ -15,9 +16,9 @@ class Facebook extends Component {
                     background: '#f4f4f4',
                     padding: '20px',
                 }}>
-                    <img src={this.props.fbStore.picture} alt={this.props.fbStore.name} />
-                    <h2>Welcome {this.props.fbStore.name}</h2>
-                    Email: {this.props.fbStore.email}
+                    <img src={picture} alt={name} />
+                    <h2>Welcome {name}</h2>
+                    Email: {email}
                 </div>
             )
         }
