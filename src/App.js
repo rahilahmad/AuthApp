@@ -42,7 +42,7 @@ class App extends Component {
     else {
       mainContent = (
         <div>
-          <p style={marginLeft= 100}><Linkedin /></p>
+          <p style={margin= 100}><Linkedin /></p>
           <CalendarContainer />
         </div>
       )
