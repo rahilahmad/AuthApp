@@ -24,7 +24,6 @@ export function getEvents() {
             })
     }
 }
-
 const setCalenderEvents = (events) => {
     return {
         type: "GET_EVENTS",

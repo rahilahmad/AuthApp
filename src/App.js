@@ -25,23 +25,32 @@ class App extends Component {
     }
     else if (isLoggedInNameFacebook === true) {
       mainContent = (
-        <p><Facebook /></p>
+        <div>
+          <p><Facebook /></p>
+          <CalendarContainer />
+        </div>
       )
     }
     else if (isLoggedInName === true) {
       mainContent = (
-        <p><Google /></p>
+        <div>
+          <p><Google /></p>
+          <CalendarContainer />
+        </div>
       )
     }
     else {
       mainContent = (
-        <p><Linkedin /></p>
+        <div>
+          <p><Linkedin /></p>
+          <CalendarContainer />
+        </div>
       )
     }
     return (
       <div>
         {mainContent}
-        <CalendarContainer />
+
       </div>
     );
   }
