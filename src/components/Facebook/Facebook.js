@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import FacebookLogin from 'react-facebook-login';
 import { connect } from 'react-redux';
 import { repsonseFacebook } from './action';
-import {appId} from '../../config'
+import {appId} from '../../config';
+import CalendarContainer from '../calender/calender';
 
 class Facebook extends Component {
 
@@ -11,7 +12,8 @@ class Facebook extends Component {
         let fbContent;
         if (isLoggedInNameFacebook === true ) {
             fbContent = (
-                <div style={{
+           <div>
+                    <div style={{
                     width: '400px',
                     margin: 'auto',
                     background: '#f4f4f4',
@@ -21,6 +23,8 @@ class Facebook extends Component {
                     <h2>Welcome {name}</h2>
                     Email: {email}
                 </div>
+                <CalendarContainer /> 
+           </div>
             )
         }
         else {

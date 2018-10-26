@@ -3,6 +3,7 @@ import LinkedinSDK from 'react-linkedin-sdk';
 import { connect } from 'react-redux';
 import { repsonseLinkedin } from './action';
 import {clientIdLinkedin} from '../../config'
+import CalendarContainer from '../calender/calender';
 
 class Linkedin extends Component {
     render() {
@@ -10,7 +11,8 @@ class Linkedin extends Component {
         let linkContent;
         if (isLoggedInNameLinkedin) {
             linkContent = (
-                <div style={{
+             <div>
+                    <div style={{
                     width: '400px',
                     margin: 'auto',
                     background: '#f4f4f4',
@@ -21,6 +23,9 @@ class Linkedin extends Component {
                     {/* Email: {email} */}
                     Email: {email}
                 </div>
+                <CalendarContainer />
+             </div>
+
             )
         }
         else {

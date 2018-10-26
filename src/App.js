@@ -27,7 +27,7 @@ class App extends Component {
       mainContent = (
         <div>
           <p style={{marginLeft : 550}}><Facebook /></p>
-          <CalendarContainer />
+          {/* <CalendarContainer /> */}
         </div>
       )
     }
@@ -35,7 +35,7 @@ class App extends Component {
       mainContent = (
         <div>
           <p style={{marginLeft : 550}}><Google /></p>
-          <CalendarContainer />
+          {/* <CalendarContainer /> */}
         </div>
       )
     }
@@ -43,7 +43,7 @@ class App extends Component {
       mainContent = (
         <div>
           <p style={{marginLeft : 550}}><Linkedin /></p>
-          <CalendarContainer />
+          {/* <CalendarContainer /> */}
         </div>
       )
     }

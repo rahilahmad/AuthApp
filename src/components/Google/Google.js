@@ -3,6 +3,7 @@ import GoogleLogin from 'react-google-login';
 import { connect } from 'react-redux';
 import { responseGmail } from './action';
 import {clientIdGoogle} from '../../config';
+import CalendarContainer from '../calender/calender';
 
 class Google extends Component {
 
@@ -11,7 +12,8 @@ class Google extends Component {
     let gmContent;
     if (isLoggedInName=== true) {
       gmContent = (
-        <div style={{
+     <div>
+          <div style={{
           width: '400px',
           margin: 'auto',
           background: '#f4f4f4',
@@ -21,6 +23,8 @@ class Google extends Component {
           <h2>Welcome {name}</h2>
           Email: {email}
         </div>
+        <CalendarContainer />
+     </div>
       )
     }
     else {
