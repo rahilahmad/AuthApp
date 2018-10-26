@@ -17,39 +17,36 @@ class App extends Component {
     if (isLoggedInNameFacebook === false && isLoggedInName === false && isLoggedInNameLinkedin === false) {
       mainContent = (
         <div>
-          <p style={{marginLeft : 550}}><Google /></p>
-          <p style={{marginLeft : 550}}><Linkedin /></p>
-          <p style={{marginLeft : 550}}><Facebook /></p>
+          <p style={{marginLeft : 500}}><Google /></p>
+          <p style={{marginLeft : 500}}><Linkedin /></p>
+          <p style={{marginLeft : 500}}><Facebook /></p>
         </div>
       )
     }
     else if (isLoggedInNameFacebook === true) {
       mainContent = (
         <div>
-          <p style={{marginLeft : 550}}><Facebook /></p>
-          {/* <CalendarContainer /> */}
+          <p style={{marginLeft : 500}}><Facebook /></p>
         </div>
       )
     }
     else if (isLoggedInName === true) {
       mainContent = (
         <div>
-          <p style={{marginLeft : 550}}><Google /></p>
-          {/* <CalendarContainer /> */}
+          <p style={{marginLeft : 500}}><Google /></p>
         </div>
       )
     }
     else {
       mainContent = (
         <div>
-          <p style={{marginLeft : 550}}><Linkedin /></p>
-          {/* <CalendarContainer /> */}
+          <p style={{marginLeft : 500}}><Linkedin /></p>
         </div>
       )
     }
     return (
       <div>
-          <h1 style={{marginLeft : 550}}>Welcome to Calender</h1>
+          <h1 style={{marginLeft : 500}}>Welcome to Calender</h1>
       <div >
         {mainContent}
       </div>
