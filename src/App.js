@@ -37,7 +37,7 @@ class App extends Component {
         </div>
       )
     }
-    else {
+    else if (isLoggedInNameLinkedin === true) {
       mainContent = (
         <div>
           <p style={{marginLeft : 500}}><Linkedin /></p>
