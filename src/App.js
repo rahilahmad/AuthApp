@@ -31,7 +31,7 @@ class App extends Component {
       )
     }
     else if (isLoggedInName === true) {
-      mainContent = (
+      mainContent = ( 
         <div>
           <p style={{marginLeft : 500}}><Google /></p>
         </div>
