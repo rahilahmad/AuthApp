@@ -4,7 +4,7 @@ const initialState = {
     userID: '',
     email: '',
     picture: '',
-    isLoggedInNameLinkedin: false
+    // isLoggedInNameLinkedin: false
 }
 export const linkReducer = (state = initialState, action) => {
     switch (action.type) {
