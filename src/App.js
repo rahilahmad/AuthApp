@@ -17,16 +17,16 @@ class App extends Component {
     if (isLoggedInNameFacebook === false && isLoggedInName === false && isLoggedInNameLinkedin === false) {
       mainContent = (
         <div>
-          <p><Google /></p>
-          <p><Linkedin /></p>
-          <p><Facebook /></p>
+          <p style={{marginLeft : 550}}><Google /></p>
+          <p style={{marginLeft : 550}}><Linkedin /></p>
+          <p style={{marginLeft : 550}}><Facebook /></p>
         </div>
       )
     }
     else if (isLoggedInNameFacebook === true) {
       mainContent = (
         <div>
-          <p><Facebook /></p>
+          <p style={{marginLeft : 550}}><Facebook /></p>
           <CalendarContainer />
         </div>
       )
@@ -34,7 +34,7 @@ class App extends Component {
     else if (isLoggedInName === true) {
       mainContent = (
         <div>
-          <p><Google /></p>
+          <p style={{marginLeft : 550}}><Google /></p>
           <CalendarContainer />
         </div>
       )
@@ -42,7 +42,7 @@ class App extends Component {
     else {
       mainContent = (
         <div>
-          <p><Linkedin /></p>
+          <p style={{marginLeft : 550}}><Linkedin /></p>
           <CalendarContainer />
         </div>
       )
@@ -50,7 +50,7 @@ class App extends Component {
     return (
       <div>
           <h1 style={{marginLeft : 550}}>Welcome to Calender</h1>
-      <div style={{marginLeft : 550}}>
+      <div >
         {mainContent}
       </div>
       </div>
