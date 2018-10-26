@@ -6,7 +6,7 @@ class Linkedin extends Component {
     responseLinkedin = (response) => {
         console.log(response);
     }
-    render() {  
+    render() {
         return (
             <div>
                 <LinkedinSDK
@@ -17,7 +17,7 @@ class Linkedin extends Component {
                     loginButtonText={'Login with Linkedin'}
                     buttonType={'button'}
                 />
-          </div>
+            </div>
         )
     }
 }

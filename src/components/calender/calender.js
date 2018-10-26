@@ -18,7 +18,7 @@ class CalendarContainer extends Component {
             events: []
         }
     }
-
+    
     componentDidMount() {
         this.props.getEvents();
     }
