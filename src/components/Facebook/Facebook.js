@@ -42,6 +42,7 @@ class Facebook extends Component {
             </div>
         )
     }
+    // testing 
 }
 const mapDispatchToProps = dispatch => ({
     respFacebook: data1 => dispatch(repsonseFacebook(data1)),
